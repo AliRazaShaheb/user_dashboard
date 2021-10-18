@@ -33,6 +33,11 @@ const UserGallery = () => {
             padding="2% 5%" 
         >
 
+            {/* Chat Bar */}
+            <ChatContainer>
+                <IndexChat />
+            </ChatContainer>
+
             {/* left section */}
             <LeftSection flex={2} 
                 justify="center" 
@@ -92,8 +97,7 @@ const UserGallery = () => {
             </RightSection>
 
 
-            {/* Chat Bar */}
-            <IndexChat />
+            
 
             {/* User menu Popup */}
                 <UserMenu popup={popup} />
@@ -106,7 +110,7 @@ const UserGallery = () => {
 
 export default UserGallery
 
-//****should be removed this after work done */
+
 
 
 // style
@@ -135,6 +139,21 @@ const LeftSection = styled(SmallContainer)`
         display: none;
     }
 `;
+
+const ChatContainer = styled.div`
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    z-index:100;
+    bottom:0;
+    left:0;
+    z-index:1;
+    background-color:gray;
+    
+    
+`;
+
+
 const Backdrop = styled.div`
     width: 100vw;
     height: 100vh;

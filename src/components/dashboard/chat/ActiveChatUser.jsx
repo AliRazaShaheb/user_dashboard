@@ -160,6 +160,11 @@ const ChatContainer = styled(SmallContainer)`
     border:1px solid ${colors.primary};
     background-color:${colors.primary};
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        width:220px;
+        right:260px;
+    }
 `;
 const ChatHeader = styled(SmallContainer)`
     border-radius:10px 10px 0 0;

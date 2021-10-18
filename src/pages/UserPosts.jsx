@@ -12,7 +12,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import ComingSoon from '../components/common/ComingSoon'
 
 
-const UserPost = () => {
+const UserGallery = () => {
     
     const [sideBar, setSideBar] = useState(false)
     // userMenu popup state management
@@ -32,6 +32,11 @@ const UserPost = () => {
             width="100%" 
             padding="2% 5%" 
         >
+
+            {/* Chat Bar */}
+            <ChatContainer>
+                <IndexChat />
+            </ChatContainer>
 
             {/* left section */}
             <LeftSection flex={2} 
@@ -92,8 +97,7 @@ const UserPost = () => {
             </RightSection>
 
 
-            {/* Chat Bar */}
-            <IndexChat />
+            
 
             {/* User menu Popup */}
                 <UserMenu popup={popup} />
@@ -104,9 +108,9 @@ const UserPost = () => {
     )
 }
 
-export default UserPost
+export default UserGallery
 
-//****should be removed this after work done */
+
 
 
 // style
@@ -135,6 +139,21 @@ const LeftSection = styled(SmallContainer)`
         display: none;
     }
 `;
+
+const ChatContainer = styled.div`
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    z-index:100;
+    bottom:0;
+    left:0;
+    z-index:1;
+    background-color:gray;
+    
+    
+`;
+
+
 const Backdrop = styled.div`
     width: 100vw;
     height: 100vh;

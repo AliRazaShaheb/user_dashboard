@@ -23,9 +23,12 @@ export default Header
 
 const WaveHeaderContainer = styled.div`
   position:relative;
-  height:300px;
+  height:100vh;
+  width:100vw;
   display:flex;
   flex-direction:column;
+  overflow:hidden;
+  
 
 `;
 
@@ -39,17 +42,22 @@ const WaveHeaderSVG = ({imgOpacity, position, top}) => {
     width:100%;
     opacity:${imgOpacity};
     position:${position};
-    top:${top}
+    top:${top};
     `;
-    const HeaderImgStyle={
-        maxWidth:"100%",
-        height:"auto",
-        
+    const Img = styled.img`
+        width:100%;
+        @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        width:300%;
+
     }
+        
+    `;
+    
 
     return (
         <HeaderContainer>
-            <img src={headerimg} style={HeaderImgStyle}/>
+            <Img src={headerimg} />
         </HeaderContainer>
 
     )

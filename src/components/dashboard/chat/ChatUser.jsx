@@ -86,7 +86,11 @@ const ChatContainer = styled(SmallContainer)`
     background-color:${colors.primary};
     transform-origin: bottom center;
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-    
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        width:220px;
+        right:30px;
+    }
 `;
 const ChatHeader = styled(SmallContainer)`
     border-radius:10px 10px 0 0;
