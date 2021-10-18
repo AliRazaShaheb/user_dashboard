@@ -104,7 +104,7 @@ const MenuContainer = styled(SmallContainer)`
     @media only screen and (max-width: 768px) {
         /* For mobile phones: */
         right:5%;
-        top:5%;
+        top:10%;
 
         }
 `;

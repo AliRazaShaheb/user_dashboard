@@ -15,7 +15,7 @@ position:relative;
 
 @media only screen and (max-width: 768px) {
         /* For mobile phones: */
-        height: 130vh;
+        height: 142vh;
 
         }
 `;

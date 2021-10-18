@@ -88,8 +88,8 @@ const ChatContainer = styled(SmallContainer)`
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     @media only screen and (max-width: 768px) {
         /* For mobile phones: */
-        width:220px;
-        right:30px;
+        width:200px;
+        right:5px;
     }
 `;
 const ChatHeader = styled(SmallContainer)`
