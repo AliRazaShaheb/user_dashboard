@@ -24,6 +24,8 @@ or
 yarn start
 ```
 
-#### 5. Kindly revert  :grinning:
+#### 5. Thats it... wait for program to launch on your default web browsers
+
+## Kindly revert  :grinning:
 #### :email: arz.shaheb@gmail.com
 #### :iphone: +91 90040 57 032
