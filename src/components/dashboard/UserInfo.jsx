@@ -12,7 +12,6 @@ import GMap from '../dashboard/GoogleMap'
 
 
 const UserInfo = () => {
-    
 
     const {selectedUser} = useSelector(userListSelector)
 

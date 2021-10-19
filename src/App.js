@@ -1,6 +1,6 @@
 import {useEffect} from 'react';
 
-import { BrowserRouter as Router, Switch, Route,  } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route  } from "react-router-dom";
 
 // importing redux hook
 import {useDispatch} from 'react-redux';
@@ -30,8 +30,11 @@ useEffect(()=>{
 },[dispatch]);
 
 
+
+
+
 //getting filtered data
-const selectedUserData = users.filter((user)=>{
+  users.filter((user)=>{
   if(user.id===selectedUserID){
     return dispatch(setSelectedUser(user))
   }

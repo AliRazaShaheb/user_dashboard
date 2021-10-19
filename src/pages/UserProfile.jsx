@@ -11,9 +11,14 @@ import Sidebar from '../components/dashboard/Sidebar'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
+
+
+
+
 //user dashboard
 export const UserProfile = () => {
     
+
     // side bar state management
     const [sideBar, setSideBar] = useState(false)
     
@@ -117,7 +122,7 @@ export const UserProfile = () => {
                     popup={popup} 
                     onClick={handlePopup}
                 ></UserMenuBackdrop>
-
+                
         </BigContainer>
     )
 }

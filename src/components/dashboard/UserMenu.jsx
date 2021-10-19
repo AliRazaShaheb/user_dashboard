@@ -1,13 +1,12 @@
 import React from 'react'
-import {Avatar, Divider} from '@mui/material'
+import { Avatar, Divider } from '@mui/material'
 import styled from 'styled-components'
-import {SmallContainer} from '../common/Containers'
+import { SmallContainer } from '../common/Containers'
 import { colors } from '../../theme/Colors'
 import { borderRadius } from '../../theme/BorderRadius'
 import { Title, Title1 } from '../../theme/Typography'
 import UserLists from '../login/UserLists'
-import{Link} from 'react-router-dom';
-import { keyframes } from 'styled-components'
+import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { userListSelector } from '../../state/UserListSlice';
 
